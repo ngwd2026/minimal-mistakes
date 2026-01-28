@@ -271,6 +271,25 @@ header:
   </ul>
 </div>
 
+<div id="submission"></div>
+<div class="section-box">
+  <h2>Important Dates</h2>
+  
+  <table class="dates-table">
+    <tr>
+      <td class="label-col">Paper Submission Deadline:</td>
+      <td class="date-col">07 April, 2026</td>
+    </tr>
+    <tr>
+      <td class="label-col">Acceptance Notification:</td>
+      <td class="date-col">21 April, 2026</td>
+    </tr>
+    <tr>
+      <td class="label-col">Final Manuscript Submission:</td>
+      <td class="date-col">28 April, 2026</td>
+    </tr>
+  </table>
+</div>
 
 <h2 id="organizers" style="border-bottom: 1px solid #eee; padding-bottom: 10px;">Workshop Organizers</h2>
 
