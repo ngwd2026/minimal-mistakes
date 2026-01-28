@@ -355,7 +355,7 @@ header:
   }
 
   .org-info {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     color: #666;
     line-height: 1.4;
     text-align: center;
@@ -427,7 +427,7 @@ header:
     <div class="org-card">
       <img src="{{ '/assets/images/Ge.jpg' | relative_url }}" class="org-portrait" alt="Yao Ge">
       <div class="org-name">Yao Ge</div>
-      <div class="org-info">Nanyang Technological University</div>
+      <div class="org-info">Nanyang Technological University,<br>Singapore</div>
       <div class="org-email">
         <a href="mailto:yao.ge@ntu.edu.sg">yao.ge@ntu.edu.sg</a>
       </div>
