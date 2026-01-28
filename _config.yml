@@ -15,7 +15,7 @@ name                     : &name "NGWD 2026" # <--- 修改：网页标签名 (�
 description              : &description "Next-Generation Waveforms Design for Communications, Sensing, and Integrated Systems" # <--- 修改：网站描述 (根据图片主题)
 url                      : "https://ngwd2026.github.io" # <--- 【必填】已改为 ngwd2026
 baseurl                  : "/isit_workshop" 
-repository               : "ngwd2026/isit_wprkshop" # <--- 已改为 ngwd2026
+repository               : "ngwd2026/isit_workshop" # <--- 已改为 ngwd2026
 
 # Site Author - 侧边栏信息
 # Because this is a workshop site, we adapt the "Personal Bio" to "Workshop Info"
