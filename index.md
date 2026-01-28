@@ -1,7 +1,7 @@
 ---
 
 permalink: /
-title: "Coding Theory for Post-Quantum Security and Quantum Reliability"
+title: "Next-Generation Waveforms Design for Communications, Sensing, and Integrated Systems: Information-Theoretic & Application Perspectives"
 excerpt: "Workshop at IEEE ISIT 2026 (Guangzhou)<br><span class='workshop-date'>July 03 (Friday), 2026</span>"
 author_profile: false
 header:
