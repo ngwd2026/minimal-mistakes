@@ -1,8 +1,18 @@
 ---
-layout: single
+
+permalink: /
+title: "Coding Theory for Post-Quantum Security and Quantum Reliability"
+excerpt: "Workshop at IEEE ISIT 2026 (Guangzhou)<br><span class='workshop-date'>July 03 (Friday), 2026</span>"
 author_profile: false
-title: "IEEE ISIT 2026 Workshop"
+header:
+  overlay_image: "docs/assets/images/Banner.jpg"
+  overlay_filter: 0.3
+
 ---
+
+
+
+
 
 
 <style>
