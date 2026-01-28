@@ -1,13 +1,9 @@
-
 ---
-permalink: /
-title: "Next-Generation Waveforms Design for Communications, Sensing, and Integrated Systems"
-excerpt: "Workshop at IEEE ISIT 2026 (Guangzhou)<br><span class='workshop-date'>June 28 – July 03, 2026</span>"
+layout: single
 author_profile: false
-header:
-  overlay_image: "/images/header-bg.jpg" # 建议上传一张广州或者会议相关的背景图命名为 header-bg.jpg
-  overlay_filter: 0.5
+title: "IEEE ISIT 2026 Workshop"
 ---
+
 
 <style>
   /* 1. 引入 Google Fonts */
