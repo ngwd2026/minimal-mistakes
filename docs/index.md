@@ -296,20 +296,16 @@ header:
   /* === 1. 人物排列网格 === */
   .org-grid {
     display: flex;
-    /* 改用 space-between 或 center */
     justify-content: center; 
     flex-wrap: wrap;
-    /* 关键点1：减小间距，从 30px -> 15px，给卡片腾出更多空间 */
-    gap: 15px; 
+    gap: 15px; /* 保持较小的间距 */
     margin-top: 20px;
+    align-items: flex-start; /* 让卡片顶部对齐，高度随内容自然延伸 */
   }
 
   /* === 2. 单个人物卡片 === */
   .org-card {
-    /* 关键点2：宽度设置为 30% ~ 32%，保证一行能放下3个 */
     width: 31%; 
-    
-    /* 关键点3：减小最小宽度限制。之前是 250px 太宽了，改成 200px 或 210px */
     min-width: 210px; 
     
     text-align: center;
@@ -317,13 +313,10 @@ header:
     border: 1px solid #e1e4e8;
     border-radius: 8px;
 
-    /* 关键点4：调整内部留白。
-       上下保持 20px，左右改成 20px（之前是30px），既保留了留白感，又省了空间 */
+    /* 内部留白保持不变，维持相框感 */
     padding: 20px 20px; 
     
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-    /* 防止 padding 撑大盒子宽度 */
     box-sizing: border-box;
   }
   
@@ -332,23 +325,27 @@ header:
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
-  /* === 3. 照片样式 === */
+  /* === 3. 照片样式 (关键修改) === */
   .org-portrait {
-    width: 100%;
-    /* 稍微把高度从 220px 调小到 200px，因为卡片变窄了，这样比例更好看 */
-    height: 200px; 
-    object-fit: cover; 
-    object-position: top;
+    width: 100%; /* 宽度撑满卡片内部区域 */
+    
+    /* === 重点：高度自动，不再强制固定 === */
+    height: auto; 
+    
+    /* 加上这个确保以块级显示，消除图片底部的微小空隙 */
+    display: block; 
+    
     border-radius: 4px;
     margin-bottom: 12px;
   }
 
   /* === 4. 文字信息 === */
   .org-name {
-    font-size: 1.1rem; /* 字体微调 */
+    font-size: 1.1rem;
     font-weight: bold;
     color: #333;
     margin-bottom: 6px;
+    margin-top: 5px; /* 稍微给名字上面加点空隙 */
   }
   .org-info {
     font-size: 0.85rem;
@@ -358,7 +355,7 @@ header:
   .org-email {
     font-size: 0.8em;
     margin-top: 10px;
-    word-break: break-all; /* 防止长邮箱撑破布局 */
+    word-break: break-all;
   }
   .org-email a {
     text-decoration: none;
@@ -369,13 +366,13 @@ header:
     text-decoration: underline;
   }
 
-  /* 标题保持左对齐 */
+  /* 标题样式 */
   .section-title {
     text-align: left;
     margin-left: 0;
     padding-left: 0;
     margin-bottom: 20px;
-    color: #0056b3; /* 你的图片里标题是蓝色的，顺便加个色 */
+    color: #0056b3; 
   }
 </style>
 
