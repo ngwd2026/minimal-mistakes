@@ -325,6 +325,20 @@ header:
     color: #666;
     line-height: 1.4;
   }
+<style>
+  /* 简单的样式，确保邮箱显示美观 */
+  .org-email {
+    font-size: 0.9em;
+    color: #0077cc;
+    margin-top: 4px;
+  }
+  .org-email a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .org-email a:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <div class="org-grid">
@@ -332,17 +346,26 @@ header:
     <img src="{{ '/assets/images/Liu.jpg' | relative_url }}" class="org-portrait" alt="Lei Liu">
     <div class="org-name">Lei Liu</div>
     <div class="org-info">Zhejiang University, China</div>
+    <div class="org-email">
+      <a href="mailto:lei_liu@zju.edu.cn">lei_liu@zju.edu.cn</a>
+    </div>
   </div>
 
   <div class="org-card">
     <img src="{{ '/assets/images/Chi.jpg' | relative_url }}" class="org-portrait" alt="Yuhao Chi">
     <div class="org-name">Yuhao Chi</div>
     <div class="org-info">Xidian University, China</div>
+    <div class="org-email">
+      <a href="mailto:yhchi@xidian.edu.cn">yhchi@xidian.edu.cn</a>
+    </div>
   </div>
 
   <div class="org-card">
     <img src="{{ '/assets/images/Ge.jpg' | relative_url }}" class="org-portrait" alt="Yao Ge">
     <div class="org-name">Yao Ge</div>
     <div class="org-info">Nanyang Technological University</div>
+    <div class="org-email">
+      <a href="mailto:yao.ge@ntu.edu.sg">yao.ge@ntu.edu.sg</a>
+    </div>
   </div>
 </div>
