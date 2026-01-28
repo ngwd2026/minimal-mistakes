@@ -31,7 +31,7 @@ description              : "Workshop on Next-Generation Waveforms Design for Com
 url                      : # ⚠️ 注意：如果你发布到 GitHub Pages，这里通常填 "https://你的用户名.github.io"
 baseurl                  : # ⚠️ 注意：如果你有仓库名，这里填 "/仓库名" (例如 "/isit2026-workshop")，如果是主仓库则留空
 repository               : # GitHub username/repo-name e.g. "yourname/isit2026"
-teaser                   : "C:\Users\86150\Desktop\Banner.jpg" # 建议找一张广州风景图或波形图放在 assets/images/ 下，并填入路径，如 "/assets/images/guangzhou.jpg"
+teaser                   : "C:/Users/86150/Desktop/Banner.jpg" # 建议找一张广州风景图或波形图放在 assets/images/ 下，并填入路径，如 "/assets/images/guangzhou.jpg"
 logo                     : # 建议将 IEEE 或 ISIT 的 Logo 放在 assets/images/ 下，并填入路径
 masthead_title           : "IEEE ISIT 2026 Workshop" # 顶部导航栏显示的标题
 breadcrumbs              : true
