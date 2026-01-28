@@ -293,28 +293,6 @@ header:
 
 
 <style>
-  /* === 1. 最外层的大框框 === */
-  .big-container {
-    background-color: #fff;       /* 白色背景 */
-    border: 1px solid #e1e4e8;    /* 浅灰色边框 */
-    border-radius: 8px;           /* 圆角 */
-    padding: 30px 40px;           /* 内部留白 */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 阴影 */
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  /* === 2. 标题样式 === */
-  .big-container h2 {
-    color: #0056b3;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 15px;
-    margin-top: 0;
-    margin-bottom: 25px;
-    font-size: 1.5rem;
-  }
-
-<style>
   /* === 1. 人物排列网格 === */
   .org-grid {
     display: flex;
