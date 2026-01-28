@@ -1,198 +1,125 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
+# This config file is meant for settings that affect your entire site.
 
-# Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default" 
-title                    : "IEEE ISIT 2026 Workshop" # <--- 修改：网站标题 (根据图片修改)
-title_separator          : "-"
-name                     : &name "NGWD 2026" # <--- 修改：网页标签名 (从QSAFE改为NGWD)
-description              : &description "Next-Generation Waveforms Design for Communications, Sensing, and Integrated Systems" # <--- 修改：网站描述 (根据图片主题)
-url                      : "https://ngwd2026.github.io" # <--- 【必填】已改为 ngwd2026
-baseurl                  : "/isit_workshop" 
-repository               : "ngwd2026/isit_workshop" # <--- 已改为 ngwd2026
-
-# Site Author - 侧边栏信息
-# Because this is a workshop site, we adapt the "Personal Bio" to "Workshop Info"
-author:
-  # Biographic information
-  avatar           : "/images/profile.png" # <--- 建议找一张IEEE ISIT或Workshop的Logo命名为profile.png上传到images文件夹
-  name             : "Workshop Info"
-  pronouns         : # 删掉了
-  bio              : "Next-Generation Waveforms Design @ IEEE ISIT 2026" # <--- 修改：侧边栏简介 (图片主题简化)
-  location         : "Guangzhou, China" # <--- 修改：地点 (根据图片修改)
-  employer         : "IEEE ISIT 2026"   # <--- 修改：主办方
-  uri              : # URL
-  email            : "yhchi@xidian.edu.cn" # <--- 修改：填入了图片中的联系邮箱
-
-  # 下面的学术社交链接对会议网站没用，全部注释掉了
-  # academia           : # URL
-  # arxiv              : # URL
-  # googlescholar      : 
-  # inspire-hep        : # URL
-  # impactstory        : # URL
-  # orcid              : 
-  # semantic           : # URL
-  # ssrn               : # URL
-  # pubmed             : 
-  # researchgate       : # URL
-  # scopus             : # URL
-  # zotero             : # URL
-
-  # Repositories and software development
-  # bitbucket        : # Username
-  # codepen          : # Username
-  # dribbble         : # Username
-  # github           : # 如果想放代码仓库链接，可以填在这里
-  # kaggle           : # Username  
-  # stackoverflow    : # User number
-
-  # Social media
-  # artstation       : # Username
-  # bluesky          : # Username
-  # facebook         : # Username
-  # flickr           : # Username
-  # foursquare       : # Username
-  # goodreads        : # Username
-  # google_plus      : # Username
-  # keybase          : # Username
-  # instagram        : # Username
-  # lastfm           : # Username
-  # linkedin         : # Username
-  # mastodon         : # URL
-  # medium           : # URL
-  # pinterest        : # Username
-  # soundcloud       : # Username
-  # steam            : # Username
-  # telegram         : # URL
-  # tumblr           : # Username
-  # twitter          : # Username
-  # vine             : # Username
-  # weibo            : # Username
-  # wikipedia        : # Username
-  # xing             : # Username
-  # youtube          : # Username
-  # zhihu            : # Username
-
-# Publication Category - 这些分类保留着没事，虽然暂时用不上
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+# Theme Settings
+# 皮肤建议使用 "air" (蓝白色调，符合海报风格) 或 "default"
+minimal_mistakes_skin    : "air" # Options: "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
-comments:
-  provider               : # 关掉了评论功能，会议网站不需要评论
-  disqus:
-    shortname            :
-  discourse:
-    server               : 
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false      # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+locale                   : "en-US"
+rtl                      : false
+title                    : "IEEE ISIT 2026 Workshop"
+title_separator          : "-"
+# 副标题提取自海报的主题
+subtitle                 : "Next-Generation Waveforms Design"
+name                     : "ISIT 2026 Workshop"
+# 描述中包含了完整的会议主题和时间地点，利于SEO
+description              : "Workshop on Next-Generation Waveforms Design for Communications, Sensing, and Integrated Systems. June 28 – July 03, 2026, Guangzhou, China."
+url                      : # ⚠️ 注意：如果你发布到 GitHub Pages，这里通常填 "https://你的用户名.github.io"
+baseurl                  : # ⚠️ 注意：如果你有仓库名，这里填 "/仓库名" (例如 "/isit2026-workshop")，如果是主仓库则留空
+repository               : # GitHub username/repo-name e.g. "yourname/isit2026"
+teaser                   : # 建议找一张广州风景图或波形图放在 assets/images/ 下，并填入路径，如 "/assets/images/guangzhou.jpg"
+logo                     : # 建议将 IEEE 或 ISIT 的 Logo 放在 assets/images/ 下，并填入路径
+masthead_title           : "IEEE ISIT 2026 Workshop" # 顶部导航栏显示的标题
+breadcrumbs              : true
+words_per_minute         : 200
+enable_copy_code_button  : true
+copyright                : "IEEE ISIT 2026 Workshop Organizers"
+copyright_url            : # defaults to site.url
 
+# Comments (学术会议网站通常不需要评论功能，已全部留空或注释)
+comments:
+  provider               : false
+
+# ReCaptcha & Search
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   :
+  hide                   :
+search                   : true
+search_full_content      : true
+search_provider          : lunr
 
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-alexa_site_verification  :
+naver_site_verification  :
 yandex_site_verification :
-
+baidu_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               :
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+og_image                 : # Open Graph/Twitter default site image
 
+# Site Author (这里配置侧边栏显示的会议信息)
+author:
+  name             : "Workshop Organizers"
+  avatar           : # 这里可以放会议 Logo 或广州塔的小图标路径
+  bio              : "<strong>June 28 – July 03, 2026</strong><br>Guangzhou, China"
+  location         : "Guangzhou, China"
+  email            : "yhchi@xidian.edu.cn" # 海报上的联系邮箱
+  links:
+    # 这里可以添加主办大学的链接，或者删除不需要的链接
+    - label: "Email Contact"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:yhchi@xidian.edu.cn"
+    # - label: "Zhejiang University"
+    #   icon: "fas fa-fw fa-university"
+    #   url: "https://www.zju.edu.cn/"
 
-# Analytics
-analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
-  google:
-    tracking_id          :
+# Site Footer
+footer:
+  links:
+    - label: "Contact"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:yhchi@xidian.edu.cn"
+  since: "2026"
 
-
-# Reading Files
+# Reading Files (系统设置，无需更改)
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - vendor
   - .asset-cache
   - .bundle
-  - .github
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/_main.js
   - assets/js/plugins
+  - assets/js/_main.js
   - assets/js/vendor
-  - CHANGELOG
   - Capfile
+  - CHANGELOG
   - config
-  - Dockerfile
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
-  - local
   - log
+  - minimal-mistakes-jekyll.gemspec
   - node_modules
-  - package.json*
+  - package.json
+  - package-lock.json
   - Rakefile
   - README
   - tmp
-  - vendor
+  - /docs
+  - /test
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 
 # Conversion
 markdown: kramdown
@@ -200,7 +127,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -213,106 +139,48 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-
-# These settings control how pages and collections are included in the site
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: false # <--- 修改：默认关闭侧边栏，让页面更宽
-      read_time: true
-      comments: false
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false # <--- 修改：默认关闭侧边栏
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      comments: false
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      comments: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: false
-      share: true
-      comment: false
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: false
-      share: true
-
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed 
-
+  style: compressed
 
 # Outputting
 permalink: /:categories/:title/
-timezone: Etc/UTC 
+timezone: Asia/Shanghai # 修改为中国时间
+
+# Pagination
+paginate: 5
+paginate_path: /page:num/
+pagination:
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
 
 # Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
 
 whitelist:
-  - jekyll-feed
-  - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
 
 category_archive:
   type: liquid
@@ -325,3 +193,15 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false # 默认关闭评论
+      share: true
+      related: true
