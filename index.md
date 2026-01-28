@@ -5,7 +5,7 @@ title: "Next-Generation Waveforms Design for Communications, Sensing, and Integr
 excerpt: "Workshop at IEEE ISIT 2026 (Guangzhou)<br><span class='workshop-date'>July 03 (Friday), 2026</span>"
 author_profile: false
 header:
-  overlay_image: "assets/images/image.png"
+  overlay_image: "https://github.com/ngwd2026/isit_workshop/blob/master/image/guangzhou.png"
   overlay_filter: 0.3
 
 ---
