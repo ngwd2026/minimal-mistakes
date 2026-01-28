@@ -1,14 +1,14 @@
-# 1. 必须加这行！否则 GitHub Pages 找不到主题，网页会没有样式
-remote_theme             : "mmistakes/minimal-mistakes"
+# 1. 必须加这行！
+remote_theme: "mmistakes/minimal-mistakes"
 
-# 2. 必须填 URL！否则 CSS 路径拼接错误
-url                      : "https://ngwd2026.github.io/isit_workshop/"
+# 2. 这里的 URL 后面不要带仓库名
+url: "https://ngwd2026.github.io"
 
-# 3. 必须填 Baseurl！(对应你的仓库名 isit_workshop)
-#baseurl                  : "/isit_workshop"
+# 3. 这里的 Baseurl 必须填仓库名（注意：前面必须有斜杠 /）
+baseurl: "/isit_workshop"
 
 # 4. 仓库路径
-repository               : "ngwd2026/isit_workshop"
+repository: "ngwd2026/isit_workshop"
 
 # Welcome to Jekyll!
 #
