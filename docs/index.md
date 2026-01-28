@@ -293,28 +293,29 @@ header:
 
 
 <style>
-  /* === 1. 人物排列网格 === */
+  /* === 1. 整体容器布局 === */
   .org-grid {
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;
-    gap: 15px; /* 保持较小的间距 */
+    gap: 20px; /* 卡片间距 */
     margin-top: 20px;
-    align-items: flex-start; /* 让卡片顶部对齐，高度随内容自然延伸 */
+    align-items: stretch; /* 让所有卡片的高度自动拉伸一致 */
   }
 
-  /* === 2. 单个人物卡片 === */
+  /* === 2. 单个卡片样式 === */
   .org-card {
-    width: 31%; 
-    min-width: 210px; 
+    width: 30%; 
+    min-width: 220px; /* 保证手机上不会太窄 */
     
-    text-align: center;
     background-color: #ffffff; 
     border: 1px solid #e1e4e8;
     border-radius: 8px;
-
-    /* 内部留白保持不变，维持相框感 */
     padding: 20px 20px; 
+    
+    display: flex;
+    flex-direction: column; /* 垂直排列内容 */
+    align-items: center;    /* 内容居中 */
     
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-sizing: border-box;
@@ -325,38 +326,60 @@ header:
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
 
-  /* === 3. 照片样式 (关键修改) === */
+  /* === 3. 照片样式 (核心修改) === */
   .org-portrait {
-    width: 100%; /* 宽度撑满卡片内部区域 */
+    width: 100%;
     
-    /* === 重点：高度自动，不再强制固定 === */
-    height: auto; 
+    /* 【关键点1】强制设置纵横比为 3:4 (标准半身照比例) */
+    /* 这样无论原图多高多宽，这里显示的形状都一样 */
+    aspect-ratio: 3 / 4; 
     
-    /* 加上这个确保以块级显示，消除图片底部的微小空隙 */
-    display: block; 
+    /* 保持填充，不拉伸变形 */
+    object-fit: cover; 
+    
+    /* 焦点定位在顶部中间，确保头部和肩膀不被切掉 */
+    object-position: top center; 
     
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
   }
 
-  /* === 4. 文字信息 === */
+  /* === 4. 文字信息样式 === */
   .org-name {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 6px;
-    margin-top: 5px; /* 稍微给名字上面加点空隙 */
+    margin-bottom: 8px;
+    /* 固定名字区域高度，防止有的名字太长换行导致错位 */
+    min-height: 1.4em; 
   }
+
   .org-info {
     font-size: 0.85rem;
     color: #666;
-    line-height: 1.3;
+    line-height: 1.4;
+    text-align: center;
+    
+    /* 【关键点2】强制学校介绍区域的高度 */
+    /* 这里的 60px 大约是 3 行文字的高度。 */
+    /* 即使前两个人的介绍只有 2 行，也会占 3 行的空间，从而把下面的邮箱“顶”到同一水平线 */
+    min-height: 65px; 
+    
+    /* 让文字在区域内稍微居中一点，或者靠上对齐 */
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
   }
+
   .org-email {
     font-size: 0.8em;
-    margin-top: 10px;
+    margin-top: 10px; /* 邮箱距离上面的间距 */
     word-break: break-all;
+    
+    /* 确保邮箱在卡片最底部稍微有点弹性 */
+    margin-bottom: 5px; 
   }
+  
   .org-email a {
     text-decoration: none;
     color: #0077cc;
@@ -384,7 +407,7 @@ header:
     <div class="org-card">
       <img src="{{ '/assets/images/Liu.jpg' | relative_url }}" class="org-portrait" alt="Lei Liu">
       <div class="org-name">Lei Liu</div>
-      <div class="org-info">Zhejiang University, China</div>
+      <div class="org-info">Zhejiang University,<br>China</div> <!-- 手动加br强制换行也行，不加也会自动换行 -->
       <div class="org-email">
         <a href="mailto:lei_liu@zju.edu.cn">lei_liu@zju.edu.cn</a>
       </div>
@@ -394,7 +417,7 @@ header:
     <div class="org-card">
       <img src="{{ '/assets/images/Chi.jpg' | relative_url }}" class="org-portrait" alt="Yuhao Chi">
       <div class="org-name">Yuhao Chi</div>
-      <div class="org-info">Xidian University, China</div>
+      <div class="org-info">Xidian University,<br>China</div>
       <div class="org-email">
         <a href="mailto:yhchi@xidian.edu.cn">yhchi@xidian.edu.cn</a>
       </div>
