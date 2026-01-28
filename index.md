@@ -100,40 +100,66 @@ header:
   .date-col { color: #d90000; font-weight: bold; }
 
   /* 7. Organizers 样式 (照片长方形) */
-  .organizer-grid { 
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-    text-align: center !important; 
+<style>
+  .organizer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
   }
-  .organizer-item { width: 30%; margin-bottom: 20px; }
-  
-  /* 照片改为长方形 */
-  .organizer-item img { 
-    border-radius: 6px !important; 
-    width: 150px !important; 
-    height: 200px !important; 
-    object-fit: cover !important; 
-    border: 3px solid #f0f0f0; 
-    background-color: #ddd; /* 占位色 */
+  .organizer-card {
+    width: 250px;
+    margin-bottom: 20px;
   }
-  
-  /* 【关键修改】Organizers 人名黑色加粗 */
-  .organizer-item h3 { 
-      text-align: center !important; 
-      margin-bottom: 5px !important;
-      color: #000 !important; /* 黑色 */
-      font-weight: bold !important; /* 加粗 */
+  .organizer-card img {
+    width: 180px; /* 头像大小 */
+    height: 220px;
+    object-fit: cover; /* 保证照片不缩放变形 */
+    border-radius: 4px; /* 圆角 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 淡淡的阴影，显高级 */
+    background-color: #f0f0f0; /* 图片还没加载出来时的底色 */
   }
-  
-  .organizer-item p { 
-    text-align: center !important; 
-    font-size: 0.85em !important; 
-    line-height: 1.4 !important;    
-    color: #444;
+  .organizer-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
   }
-  
-  .btn--info { margin-top: 10px; display: inline-block; background-color: #0056b3 !important; border-color: #0056b3 !important; }
+  .organizer-info {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+  }
+</style>
+
+<div class="organizer-container">
+  <div class="organizer-card">
+    <img src="{{ '/assets/images/Liu.jpg' | relative_url }}" alt="Lei Liu">
+    <div class="organizer-name">Lei Liu</div>
+    <div class="organizer-info">
+      Zhejiang University, China<br>
+      Email: lei_liu@zju.edu.cn
+    </div>
+  </div>
+
+  <div class="organizer-card">
+    <img src="{{ '/assets/images/Chi.jpg' | relative_url }}" alt="Yuhao Chi">
+    <div class="organizer-name">Yuhao Chi</div>
+    <div class="organizer-info">
+      Xidian University, China<br>
+      Email: yhchi@xidian.edu.cn
+    </div>
+  </div>
+
+  <div class="organizer-card">
+    <img src="{{ '/assets/images/Ge.jpg' | relative_url }}" alt="Yao Ge">
+    <div class="organizer-name">Yao Ge</div>
+    <div class="organizer-info">
+      Nanyang Technological University<br>
+      Email: yao.ge@ntu.edu.sg
+    </div>
+  </div>
+</div>
 
   /* 8. 封面标题样式 */
   .page__hero--overlay .page__title,
