@@ -1,4 +1,3 @@
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -10,28 +9,28 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" 
-title                    : "" # <--- 修改：网站标题
+title                    : "IEEE ISIT 2026 Workshop" # <--- 修改：网站标题 (根据图片修改)
 title_separator          : "-"
-name                     : &name "QSAFE 2026" # <--- 修改：网页标签名
-description              : &description "QSAFE 2026" # <--- 修改：网站描述
-url                      : "https://qsafe2026.github.io" # <--- 【必填】请改成你的实际网址
+name                     : &name "NGWD 2026" # <--- 修改：网页标签名 (从QSAFE改为NGWD)
+description              : &description "Next-Generation Waveforms Design for Communications, Sensing, and Integrated Systems" # <--- 修改：网站描述 (根据图片主题)
+url                      : "https://ngwd2026.github.io/isit_workshop" # <--- 【必填】已改为 ngwd2026
 baseurl                  : "" 
-repository               : "qsafe2026/qsafe2026.github.io" # 
+repository               : "ngwd2026/ngwd2026.github.io" # <--- 已改为 ngwd2026
 
 # Site Author - 侧边栏信息
-# 因为是会议网站，我们将原本的“个人简介”改成了“会议简介”
+# Because this is a workshop site, we adapt the "Personal Bio" to "Workshop Info"
 author:
   # Biographic information
-  avatar           : "/images/profile.png" # <--- 建议找一张正方形的会议Logo或校徽命名为profile.png上传到images文件夹
+  avatar           : "/images/profile.png" # <--- 建议找一张IEEE ISIT或Workshop的Logo命名为profile.png上传到images文件夹
   name             : "Workshop Info"
   pronouns         : # 删掉了
-  bio              : "Coding Theory for Post-Quantum Security and Quantum Reliability" # <--- 修改：侧边栏简介
-  location         : "Guangzhou, China" # <--- 修改：地点
+  bio              : "Next-Generation Waveforms Design @ IEEE ISIT 2026" # <--- 修改：侧边栏简介 (图片主题简化)
+  location         : "Guangzhou, China" # <--- 修改：地点 (根据图片修改)
   employer         : "IEEE ISIT 2026"   # <--- 修改：主办方
   uri              : # URL
-  email            : # 如果有公共咨询邮箱可以填在这里，否则留空
+  email            : "yhchi@xidian.edu.cn" # <--- 修改：填入了图片中的联系邮箱
 
-  # 下面的学术社交链接对会议网站没用，我全部注释掉了，以免显示错误的图标
+  # 下面的学术社交链接对会议网站没用，全部注释掉了
   # academia           : # URL
   # arxiv              : # URL
   # googlescholar      : 
@@ -123,7 +122,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : false      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -326,4 +325,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
