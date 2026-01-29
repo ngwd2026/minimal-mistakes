@@ -293,6 +293,30 @@ header:
 
 
 <style>
+
+/* === 新增：头像和名字链接样式 === */
+  
+  /* 名字链接：默认继承黑色，去掉下划线 */
+  .name-link {
+    color: #333 !important; 
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  /* 名字链接：鼠标悬停变成主题蓝 */
+  .name-link:hover {
+    color: #0056b3 !important;
+    text-decoration: underline;
+  }
+
+  /* 图片链接：去掉默认边框等干扰 */
+  .img-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
   /* === 1. 整体容器布局 === */
   .org-grid {
     display: flex;
@@ -403,30 +427,45 @@ header:
   <h2 id="organizers" class="section-title">Workshop Organizers</h2>
 
   <div class="org-grid">
-    <!-- 第一位 -->
     <div class="org-card">
-      <img src="{{ '/assets/images/Liu.jpg' | relative_url }}" class="org-portrait" alt="Lei Liu">
-      <div class="org-name">Lei Liu</div>
-      <div class="org-info">Zhejiang University,<br>China</div> <!-- 手动加br强制换行也行，不加也会自动换行 -->
+      <a href="https://person.zju.edu.cn/leiliu_cn" target="_blank" class="img-link">
+        <img src="{{ '/assets/images/Liu.jpg' | relative_url }}" class="org-portrait" alt="Lei Liu">
+      </a>
+      
+      <div class="org-name">
+        <a href="https://person.zju.edu.cn/leiliu_cn" target="_blank" class="name-link">Lei Liu</a>
+      </div>
+      
+      <div class="org-info">Zhejiang University,<br>China</div>
       <div class="org-email">
         <a href="mailto:lei_liu@zju.edu.cn">lei_liu@zju.edu.cn</a>
       </div>
     </div>
 
-    <!-- 第二位 -->
     <div class="org-card">
-      <img src="{{ '/assets/images/Chi.jpg' | relative_url }}" class="org-portrait" alt="Yuhao Chi">
-      <div class="org-name">Yuhao Chi</div>
+      <a href="https://web.xidian.edu.cn/yhchi/" target="_blank" class="img-link">
+        <img src="{{ '/assets/images/Chi.jpg' | relative_url }}" class="org-portrait" alt="Yuhao Chi">
+      </a>
+      
+      <div class="org-name">
+        <a href="https://web.xidian.edu.cn/yhchi/" target="_blank" class="name-link">Yuhao Chi</a>
+      </div>
+      
       <div class="org-info">Xidian University,<br>China</div>
       <div class="org-email">
         <a href="mailto:yhchi@xidian.edu.cn">yhchi@xidian.edu.cn</a>
       </div>
     </div>
 
-    <!-- 第三位 -->
     <div class="org-card">
-      <img src="{{ '/assets/images/Ge.jpg' | relative_url }}" class="org-portrait" alt="Yao Ge">
-      <div class="org-name">Yao Ge</div>
+      <a href="https://www.researchgate.net/profile/Yao-Ge-3" target="_blank" class="img-link">
+        <img src="{{ '/assets/images/Ge.jpg' | relative_url }}" class="org-portrait" alt="Yao Ge">
+      </a>
+      
+      <div class="org-name">
+        <a href="https://www.researchgate.net/profile/Yao-Ge-3" target="_blank" class="name-link">Yao Ge</a>
+      </div>
+      
       <div class="org-info">NTU,<br>Singapore</div>
       <div class="org-email">
         <a href="mailto:yao.ge@ntu.edu.sg">yao.ge@ntu.edu.sg</a>
