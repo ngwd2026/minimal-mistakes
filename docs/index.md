@@ -286,7 +286,7 @@ header:
   <table class="dates-table">
     <tr>
       <td class="label-col">Paper Submission Deadline:</td>
-      <td class="date-col">07 April, 2026</td>
+      <td class="date-col">07 April(firm), 2026</td>
     </tr>
     <tr>
       <td class="label-col">Acceptance Notification:</td>
