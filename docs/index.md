@@ -249,7 +249,7 @@ header:
 <div class="section-box">
   <h2>Workshop Overview</h2>
   <div style="text-align: justify;">
-    <p>With the rapid expansion of high-mobility applications, ensuring reliable communication in rapidly time-varying environments has become a critical challenge. Conventional Orthogonal Frequency Division Multiplexing (OFDM) suffers pronounced degradation in such dynamic scenarios, underscoring the urgent necessity for next-generation modulation waveforms.</p>
+    <p>With the rapid expansion of high-mobility applications, ensuring reliable communication in rapidly time-varying environments has become a critical challenge. Conventional Orthogonal Frequency Division Multiplexing (OFDM) suffers pronounced degradation in such dynamic scenarios, underscoring the urgent necessity for next-generation modulation waveforms. Consequently, emerging multicarrier schemes—including orthogonal time frequency space (OTFS), orthogonal delay division multiplexing (ODDM), orthogonal chirp division multiplexing (OCDM), affine frequency division multiplexing (AFDM), interleave frequency division multiplexing (IFDM), and random multiplexing (RM)—have provided new perspectives for robust system design.</p>
     <p>This workshop highlights fundamental challenges in waveform design that arise at the intersection of information theory and wireless communication. By bridging theoretical limits with practical system considerations, it aims to motivate participants to address core problems in next-generation waveform research, and foster innovation across theory and practice.</p>
   </div>
   
