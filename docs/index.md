@@ -375,7 +375,7 @@ header:
   }
 
   .org-info {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     color: #666;
     line-height: 1.4;
     text-align: center;
