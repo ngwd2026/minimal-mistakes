@@ -305,7 +305,7 @@ header:
   <div style="padding: 10px 0 20px 0; text-align: left;">
     <div style="margin-bottom: 5px;">
       <a href="https://www.unsw.edu.au/staff/jinhong-yuan" target="_blank" 
-         style="text-decoration: none; color: #000 !important; font-weight: 800; font-size: 1.1rem; font-family: 'Open Sans', sans-serif;">
+         style="text-decoration: none; color: #000 !important; font-weight: bold; font-size: 1.1rem; font-family: 'Open Sans', sans-serif;">
         Prof. Jinhong Yuan (IEEE Fellow)
       </a>
     </div>
