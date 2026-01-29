@@ -389,7 +389,7 @@ header:
 
 .org-email {
     /* 【改动1】字体调小：建议直接用 px 精确控制，12px 或 11px 通常比较合适 */
-    font-size: 13px !important; 
+    font-size: 15px !important; 
     
     /* 【改动2】强制不换行：这是核心，保证邮箱只在一行显示 */
     white-space: nowrap !important;
