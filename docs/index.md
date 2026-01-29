@@ -299,6 +299,23 @@ header:
   </table>
 </div>
 
+<div class="section-box">
+  <h2>Invited Speaker</h2>
+  
+  <div style="text-align: center; padding: 20px 0;">
+    <h3 style="margin: 0 0 10px 0; font-size: 1.5rem;">
+      <a href="https://www.unsw.edu.au/staff/jinhong-yuan" target="_blank" style="text-decoration: none; color: #0056b3; font-weight: bold;">
+        Jinhong Yuan
+      </a>
+    </h3>
+    
+    <p style="font-size: 1.1rem; color: #555; margin: 0; line-height: 1.6;">
+      University of New South Wales,<br>
+      Australia
+    </p>
+  </div>
+</div>
+
 
 <style>
 
