@@ -388,7 +388,7 @@ header:
   }
 
   .org-email {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     margin-top: 10px; /* 邮箱距离上面的间距 */
     word-break: break-all;
     
